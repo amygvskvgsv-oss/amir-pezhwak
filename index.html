@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amir Pezhwak | Dark Music</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;min-height:100vh;background:#03050b;color:#fff;
+font-family:Arial,sans-serif;text-align:center;
+background-image:radial-gradient(ellipse at top,#09234b,transparent 60%);
+}
+.box{max-width:650px;margin:auto;padding:35px 20px}
+.disc{
+width:250px;height:250px;margin:45px auto 30px;border-radius:50%;
+background:radial-gradient(circle,#06152c 20%,#1265bd 22%,#03050b 60%);
+border:2px solid #168cff;box-shadow:0 0 45px #0756b9;
+animation:spin 20s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+h1{font-size:42px;letter-spacing:5px;text-shadow:0 0 25px #168cff}
+h1 span{color:#168cff}
+.sub{color:#719bc9;letter-spacing:3px;font-size:12px}
+.player{
+margin:35px auto;padding:24px;max-width:500px;
+background:#080f1d;border:1px solid #174d87;border-radius:18px;
+box-shadow:0 0 35px #061b36;text-align:left;
+}
+.title{font-size:20px;font-weight:bold}
+.artist{color:#83a4c9;margin-top:8px;font-size:13px}
+audio{width:100%;margin-top:22px}
+footer{color:#56708f;font-size:11px;margin-top:35px}
+</style>
+</head>
+<body>
+<div class="box">
+  <div class="disc"></div>
+  <h1>AMIR <span>PEZHWAK</span></h1>
+  <p class="sub">NO LIGHT • NO FEAR • JUST MUSIC</p>
+
+  <div class="player">
+    <div class="title">DARK TRAP</div>
+    <div class="artist">Dark Trap · Dark Music</div>
+    <audio controls preload="metadata">
+      <source src="song.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <footer>© AMIR PEZHWAK · BUILT FOR THE NIGHT</footer>
+</div>
+</body>
+</html>
